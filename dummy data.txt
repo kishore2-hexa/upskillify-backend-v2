@@ -1,0 +1,220 @@
+
+
+
+--For generate mcq api
+{
+  "name": "Harika",
+  "skill_gaps": [
+    "Cloud Computing",
+    "Machine Learning",
+    "Data Visualization"
+  ],
+  "proficiency": {
+    "Python": "Intermediate",
+    "SQL": "Intermediate",
+    "Excel": "Advanced"
+  }
+}
+
+--Result of generate mcq api
+{
+  "message": "MCQs generated and stored successfully!",
+  "questions": [
+    {
+      "question": "Which of the following is a key benefit of using cloud computing services?",
+      "options": [
+        "Reduced costs due to scalable and on-demand resources",
+        "Improved data security through centralized management",
+        "Enhanced collaboration via real-time data sharing",
+        "All of the above"
+      ],
+      "answer": "All of the above"
+    },
+    {
+      "question": "What is the primary purpose of machine learning algorithms?",
+      "options": [
+        "To automate repetitive tasks",
+        "To identify patterns and make predictions",
+        "To optimize resource allocation",
+        "To process and analyze large datasets"
+      ],
+      "answer": "To identify patterns and make predictions"
+    },
+    {
+      "question": "Which Python library is commonly used for data visualization?",
+      "options": [
+        "NumPy",
+        "Matplotlib",
+        "Pandas",
+        "Scikit-learn"
+      ],
+      "answer": "Matplotlib"
+    },
+    {
+      "question": "In SQL, how do you retrieve data from a database table?",
+      "options": [
+        "Use the SELECT statement",
+        "Employ the INSERT INTO statement",
+        "Utilize the UPDATE statement",
+        "Apply the DELETE statement"
+      ],
+      "answer": "Use the SELECT statement"
+    },
+    {
+      "question": "Which advanced feature in Excel can assist in data analysis?",
+      "options": [
+        "PivotTables",
+        "VLOOKUP function",
+        "Macros",
+        "All of the above"
+      ],
+      "answer": "All of the above"
+    }
+  ]
+}
+
+
+--For quiz api
+{
+  "user": {
+    "username": "harika",
+    "password": "harika@123"
+  },
+  "answers": [
+    {
+      "question": "Which of the following is a key benefit of using cloud computing services?",
+      "user_answer": "All of the above"
+    },
+    {
+      "question": "What is the primary purpose of machine learning algorithms?",
+      "user_answer": "To identify patterns and make predictions"
+    },
+    {
+      "question": "Which Python library is commonly used for data visualization?",
+      "user_answer": "Matplotlib"
+    },
+    {
+      "question": "In SQL, how do you retrieve data from a database table?",
+      "user_answer": "Use the SELECT statement"
+    },
+    {
+      "question": "Which advanced feature in Excel can assist in data analysis?",
+      "user_answer": "All of the above"
+    }
+  ]
+}
+
+--Result of quiz api
+{
+  "score": "50 out of 50",
+  "detailed_results": [
+    {
+      "question": "Which of the following is a key benefit of using cloud computing services?",
+      "your_answer": "all of the above",
+      "status": "Correct"
+    },
+    {
+      "question": "What is the primary purpose of machine learning algorithms?",
+      "your_answer": "to identify patterns and make predictions",
+      "status": "Correct"
+    },
+    {
+      "question": "Which Python library is commonly used for data visualization?",
+      "your_answer": "matplotlib",
+      "status": "Correct"
+    },
+    {
+      "question": "In SQL, how do you retrieve data from a database table?",
+      "your_answer": "use the select statement",
+      "status": "Correct"
+    },
+    {
+      "question": "Which advanced feature in Excel can assist in data analysis?",
+      "your_answer": "all of the above",
+      "status": "Correct"
+    }
+  ]
+}
+
+--For course recommender api
+{
+  "user_profile": {
+    "name": "Harika",
+    "skill_gaps": [
+      "Cloud Computing",
+      "Machine Learning",
+      "Data Visualization"
+    ],
+    "proficiency": {
+      "Python": "Intermediate",
+      "SQL": "Intermediate",
+      "Excel": "Advanced"
+    }
+  },
+  "quiz_results": {
+    "score": "50 out of 50",
+  "detailed_results": [
+    {
+      "question": "Which of the following is a key benefit of using cloud computing services?",
+      "your_answer": "all of the above",
+      "status": "Correct"
+    },
+    {
+      "question": "What is the primary purpose of machine learning algorithms?",
+      "your_answer": "to identify patterns and make predictions",
+      "status": "Correct"
+    },
+    {
+      "question": "Which Python library is commonly used for data visualization?",
+      "your_answer": "matplotlib",
+      "status": "Correct"
+    },
+    {
+      "question": "In SQL, how do you retrieve data from a database table?",
+      "your_answer": "use the select statement",
+      "status": "Correct"
+    },
+    {
+      "question": "Which advanced feature in Excel can assist in data analysis?",
+      "your_answer": "all of the above",
+      "status": "Correct"
+    }
+  ]
+  }
+}
+
+--Result of recommend courses api
+{
+  "recommendations": [
+    {
+      "course_name": "[Cloud Computing Fundamentals]",
+      "platform": "Coursera",
+      "url": "https://www.coursera.org/learn/cloud-computing-fundamentals",
+      "reason": "This course is recommended to address your skill gap in cloud computing. It offers an introduction to the fundamental concepts of cloud computing, including cloud services, architecture, and deployment models."
+    },
+    {
+      "course_name": "[Machine Learning A-Z™: Hands-On Python & R In Data Science]",
+      "platform": "Udemy",
+      "url": "https://www.udemy.com/course/machinelearning/",
+      "reason": "Target your machine learning skill gap with this comprehensive course, which covers both theoretical and practical aspects of machine learning. Since you already have an intermediate level of Python, this course will help you apply your existing knowledge to machine learning tasks."
+    },
+    {
+      "course_name": "[Data Visualization with Python and Matplotlib]",
+      "platform": "Coursera",
+      "url": "https://www.coursera.org/learn/data-visualization-with-python",
+      "reason": "Focusing on your need for data visualization skills, this course teaches how to use Python and the Matplotlib library to create a variety of visualizations, including bar charts, scatter plots, and more."
+    },
+    {
+      "course_name": "[SQL for Data Analysis]",
+      "platform": "LinkedIn Learning",
+      "url": "https://www.linkedin.com/learning/sql-for-data-analysis-2020-4",
+      "reason": "Strengthen your intermediate SQL skills with this course, which is designed to help you use SQL for data analysis and extraction. Since you already have a good foundation in SQL, this course will help you apply your knowledge to real-world data analysis scenarios."
+    },
+    {
+      "course_name": "[Microsoft Excel – Advanced Formulas and Functions]",
+      "platform": "Udemy",
+      "url": "https://www.udemy.com/course/microsoft-excel-advanced-formulas-and-functions/",
+      "reason": "While you already have advanced Excel skills, this course can help fill any gaps and ensure a comprehensive understanding of Excel's advanced formulas and functions."
+    }
+  ]
+}
